@@ -1,0 +1,98 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* set the background to a linear gradient */
+header {
+    background: linear-gradient(
+        white,
+        blueviolet
+    );
+    padding: 20px;
+}
+header a {
+    color: white;
+}
+header h1 {
+    font-size: 36px;
+}
+/* set main to the opposite gradient for a nice transition */
+main {
+    background: linear-gradient(
+        blueviolet,
+        white
+    );
+}
+main h1 {
+    padding: 20px;
+    font-size: 48px;
+}
+footer h1{
+    padding: 20px;
+}
+footer li {
+    display: inline;
+    padding: 20px;
+}
+.top-box {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.top-box h1 {
+}
+.me-image {
+    width: 30%;
+    height: auto;
+    clip-path: circle();
+
+}
+/* set up our flex containers for appropriate resiability */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: center;
+}
+/* width 40% is default when page size is on a large desktop */
+.project {
+    width: 40%;
+    min-height: 600px;
+    border: solid;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.project h2 {
+    color: white;
+    padding: 20px;
+    font-size: 48px;
+    box-shadow: 10px 5px 5px black;
+    background-color: blueviolet;
+}
+
+/* main project is the large top project */
+#main-project {
+    width: 80%;
+    min-height: 600px;
+    background-image: url("/Assets/Images/ecg.jpg");
+}
+#sub-project-1 {
+    background-image: url("/Assets/Images/Ring.png");
+}
+#sub-project-2 {
+    background-image: url("/Assets/Images/Pokemon-Showdown.jpg");
+}
+#sub-project-3 {
+    background-image: url("/Assets/Images/me.png");
+}
+/* media query for the resizing of the projects */
+@media screen and (max-width: 1900px){
+    .project {
+        width: 80%;
+    }
+}
