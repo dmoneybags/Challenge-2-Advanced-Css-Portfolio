@@ -79,16 +79,16 @@ footer li {
 #main-project {
     width: 80%;
     min-height: 600px;
-    background-image: url("./Images/ecg.jpg");
+    background-image: url("./Assets/ecg.jpg");
 }
 #sub-project-1 {
-    background-image: url("./Images/Ring.png");
+    background-image: url("./Assets/Ring.png");
 }
 #sub-project-2 {
-    background-image: url("./Images/Pokemon-Showdown.jpg");
+    background-image: url("./Assets/Pokemon-Showdown.jpg");
 }
 #sub-project-3 {
-    background-image: url("./Images/me.png");
+    background-image: url("./Assets/me.png");
 }
 /* media query for the resizing of the projects */
 @media screen and (max-width: 1900px){
